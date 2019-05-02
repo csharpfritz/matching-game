@@ -56,11 +56,11 @@ project to .NET Core 3.0 and the class library to .NET Standard 2.0.
    of your `.csproj` file with the following:
 
    ```xml
-   <Project Sdk="Microsoft.NET.Sdk">
+   <Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
      <PropertyGroup>
        <OutputType>WinExe</OutputType>
        <TargetFramework>net472</TargetFramework>
-       <UseWPF>true</UseWPF>
+       <UseWindowsForms>true</UseWindowsForms>
        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
      </PropertyGroup>
    </Project>
@@ -69,11 +69,11 @@ project to .NET Core 3.0 and the class library to .NET Standard 2.0.
    For WPF application use:
 
    ```xml
-   <Project Sdk="Microsoft.NET.Sdk">
+   <Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
      <PropertyGroup>
        <OutputType>WinExe</OutputType>
        <TargetFramework>net472</TargetFramework>
-       <UseWindowsForms>true</UseWindowsForms>
+       <UseWPF>true</UseWPF>
        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
      </PropertyGroup>
    </Project>
